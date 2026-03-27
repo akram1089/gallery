@@ -43,6 +43,8 @@ services:
       context: ./frontend
       dockerfile: Dockerfile.prod
     container_name: demo_frontend
+    environment:
+      VITE_API_URL: http://demo-akram.duckdns.org/api
     networks:
       - app-network
     restart: unless-stopped

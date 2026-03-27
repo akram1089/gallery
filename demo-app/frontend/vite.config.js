@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173,
+    allowedHosts: ["demo-akram.duckdns.org"], // 👈 add this
     watch: {
       usePolling: true
     }
